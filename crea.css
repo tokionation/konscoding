@@ -1,0 +1,119 @@
+/* projet.css */
+
+/* Réinitialisation des marges et des paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Réinitialisation des marges et des paddings pour le corps et le pied de page */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+}
+
+/* Centrer le contenu du pied de page */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #fbff00;
+}
+
+/* Style pour l'en-tête */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fffb00;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  animation: fadeIn 5s ease-in-out;
+}
+
+/* Style pour la navigation */
+nav {
+  background-color: #fbff00;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffca28;
+}
+
+/* Style pour la section banner */
+#banner {
+  text-align: center;
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+#banner h1 {
+  font-size: 72px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+#apropos {
+  text-align: center;
+  padding: 40px 0;
+  color: #ffffff;
+}
+
+#apropos h3 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 20s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

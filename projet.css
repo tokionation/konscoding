@@ -1,0 +1,382 @@
+/* projet.css */
+
+/* Réinitialisation des marges et des paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style général de la page */
+body {
+  background-color: #000000;
+  color: #f0f0f0;
+  font-family: Bold;
+}
+
+/* Style de l'en-tête */
+header {
+  background-color: #000000;
+  padding: 55px;
+  text-align: center;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  animation: fadeIn 5s ease-in-out;
+}
+
+header h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fbff28;
+}
+
+/* Style pour le conteneur du search-bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Style pour l'input du search-bar */
+#searchInput {
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+/* Style pour le bouton de recherche */
+#searchButton {
+  background-color: #ffca28;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style pour l'effet de survol sur le bouton de recherche */
+#searchButton:hover {
+  background-color: #ffdb58;
+}
+
+
+/* Styles pour la barre de recherche */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 100%;
+  outline: none;
+}
+
+
+/* Style de la navigation */
+nav {
+  background-color: #fbff13;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffca28;
+}
+
+/* Style de la bannière */
+#banner {
+  text-align: center;
+  padding: 25px;
+  background-color: #000000;
+}
+
+#banner h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+#banner h2 {
+  animation: fadeIn 5s ease-in-out;
+}
+#banner p {
+  font-size: 20px;
+  color: #efff09;
+}
+
+
+/* Style du contenu principal */
+.container {
+  background-color: #000000;
+  padding: 10px;
+
+}
+
+main header h2.subheader {
+  font-size: 24px;
+  color: #eeff07;
+  margin-bottom: 30px;
+  margin: 20px;
+  text-align: center;
+}
+/* Styles pour le texte */
+.subheader {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* Animation pour illuminer chaque lettre */
+@keyframes lightUp {
+  0% {
+    color: rgb(226, 13, 13);
+    text-shadow: none;
+  }
+  50% {
+    color: rgb(37, 201, 16);
+    text-shadow: 0 0 10px yellow;
+  }
+  100% {
+    color: rgb(253, 241, 71);
+    text-shadow: none;
+  }
+}
+
+/* Appliquer l'animation aux lettres */
+.subheader {
+  animation: lightUp 5s linear infinite; /* Ajustez la durée de l'animation selon vos préférences */
+}
+
+
+main header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* Animation pour le titre h1 */
+@keyframes neonGlow {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/* Appliquer l'animation au titre h1 */
+main h1 {
+  animation: neonGlow 10s linear infinite; /* Ajustez la durée de l'animation selon vos préférences */
+}
+
+/* Styles pour le paragraphe p */
+main p {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Animation pour le paragraphe p */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Appliquer l'animation au paragraphe p */
+main p {
+  animation: fadeInOut 10s linear infinite; /* Ajustez la durée de l'animation selon vos préférences */
+}
+
+
+/* Styles pour les images des drapeaux */
+div img {
+  max-width: 90px; /* Ajustez la taille souhaitée ici */
+  display: inline-block;
+  margin: 0 15px;
+  margin-bottom: 20px;
+}
+
+/* Style des sections */
+section {
+  padding: 25px;
+  margin-bottom: 40px;
+  background-color: #000000;
+  box-shadow: 0 0 15px rgb(248, 225, 12);
+}
+
+section h2 {
+  font-size: 24px;
+  color: #e6ff08;
+  margin-bottom: 20px;
+}
+
+/* Styles pour la section "quiz" */
+#quiz {
+  background-color: #111;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#question {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ffca28;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+}
+
+
+section p {
+  font-size: 15px;
+  color: #f0f0f0;
+}
+
+/* Style du callout */
+.callout {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.callout h3 {
+  font-size: 24px;
+  color: #ffca28;
+  margin-bottom: 10px;
+}
+
+.callout p {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+/* Style des images */
+img {
+  max-width: 150%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/* Style du pied de page */
+footer {
+  background-color: none;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #e5ff00;
+  font-size: 14px;
+}

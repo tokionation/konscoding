@@ -1,0 +1,155 @@
+/* Styles pour le corps de la page */
+body {
+    background-color: #000000;
+    color: #fffb00;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* Styles pour l'en-tête (header) */
+  header {
+    text-align: center;
+    padding: 40px;
+    background-color: #000000;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header h1 {
+    animation: fadeIn 5s ease-in-out;
+  }
+  header h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+  /* Styles pour la navigation (nav) */
+  nav {
+    background-color: #fffb0f;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffca28;
+  }
+  
+  /* Styles pour la section principale (main) */
+  .main {
+    background-color: #000000;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(245, 229, 11, 0.897);
+    margin-bottom: 50px;
+  }
+
+  /* Styles pour le formulaire */
+  .sign {
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 30px; /* Ajustez la valeur pour déplacer le texte vers le bas */
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .sign {
+    animation: fadeIn 5s ease-in-out;
+  }
+ 
+  .form1 {
+    padding: 40px;
+  }
+  
+  .un, .pass {
+    width: 100%;
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(216, 238, 16, 0.959);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+  
+  .submit:hover {
+    background: linear-gradient(to right, #E040FB, #9C27B0);
+  }
+  
+  .forgot {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Styles pour le pied de page (footer) */
+  footer {
+    background-color: #000000;
+    padding: 90px;
+    text-align: center;
+    color: #ffffff;
+  }
